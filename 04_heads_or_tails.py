@@ -28,7 +28,7 @@ else:
   print(f"You said '{guess}'. Please hit 'Run' and try again.")
 
 # ==================================================================
-# HERE IS WHERE I WENT WRONG AT THE END OF 12/02/202
+# HERE IS WHERE I WENT WRONG AT THE END OF 12/02/2020
 
 # import random
 
