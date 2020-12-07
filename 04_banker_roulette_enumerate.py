@@ -4,8 +4,8 @@
 
 import random 
 
-input("Let's play Banker Roulette!! ")
-names = input("Type a list of everyone in your group.\n \n")
+input("Let's play Banker Roulette!! Press Enter. \n")
+names = input("Type the names of at least four people in your group. Then press Enter. \n \n")
 
 if names.find(", ") != -1:
 
