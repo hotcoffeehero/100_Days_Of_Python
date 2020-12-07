@@ -35,45 +35,48 @@ randomInt = random.randint(0, 2)
 compGuess = rps[randomInt]
 
 
-if guess != compGuess:
-  if compGuess == 'rock':
-    if guess == 'paper':
-      print("You Win!")
-      print(f"You chose '{guess}':")
-      print(paper)
-      print(f"The Computer chose '{compGuess}'")
-      print(rock)
-    else: 
-      print("You Lose!")
-      print(f"You chose '{guess}':")
-      print(scissors)
-      print(f"The Computer chose '{compGuess}'")
-      print(rock)
-  elif compGuess == 'paper':
-    if guess == 'rock':
-      print("You Lose!")
-      print(f"You chose '{guess}':")
-      print(rock)
-      print(f"The Computer chose '{compGuess}'")
-      print(paper)
+if guess == 'rock' or guess == 'paper' or guess == 'scissors':
+  if guess != compGuess:
+    if compGuess == 'rock':
+      if guess == 'paper':
+        print("You Win!")
+        print(f"You chose '{guess}':")
+        print(paper)
+        print(f"The Computer chose '{compGuess}'")
+        print(rock)
+      else: 
+        print("You Lose!")
+        print(f"You chose '{guess}':")
+        print(scissors)
+        print(f"The Computer chose '{compGuess}'")
+        print(rock)
+    elif compGuess == 'paper':
+      if guess == 'rock':
+        print("You Lose!")
+        print(f"You chose '{guess}':")
+        print(rock)
+        print(f"The Computer chose '{compGuess}'")
+        print(paper)
+      else:
+        print("You win!")
+        print(f"You chose '{guess}':")
+        print(scissors)
+        print(f"The Computer chose '{compGuess}'")
+        print(paper)
     else:
-      print("You win!")
-      print(f"You chose '{guess}':")
-      print(scissors)
-      print(f"The Computer chose '{compGuess}'")
-      print(paper)
+      if guess == 'rock':
+        print("You Win!")
+        print(f"You chose '{guess}':")
+        print(rock)
+        print(f"The Computer chose '{compGuess}'")
+        print(scissors)
+      else:
+        print('You Lose!')
+        print(f"You chose '{guess}':")
+        print(paper)
+        print(f"The Computer chose: '{compGuess}'")
+        print(scissors)
   else:
-    if guess == 'rock':
-      print("You Win!")
-      print(f"You chose '{guess}':")
-      print(rock)
-      print(f"The Computer chose '{compGuess}'")
-      print(scissors)
-    else:
-      print('You Lose!')
-      print(f"You chose '{guess}':")
-      print(paper)
-      print(f"The Computer chose: '{compGuess}'")
-      print(scissors)
+    print(f"Try Again. The computer also chose '{guess}'.")
 else:
-  print(f"Try Again. The computer also chose '{guess}'.")
+  print("Giant Spelling Error. Try Agane.")
