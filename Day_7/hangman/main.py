@@ -1,4 +1,4 @@
-
+from replit import clear
 import random
 import stages
 import word_list
@@ -24,6 +24,8 @@ print(' '.join(display))
 
 while game_play == True:
   guess = input("Guess a letter: \n")
+  clear()
+  
 
   #check if the letter is correct or not
   for index in range(word_len):
