@@ -23,8 +23,6 @@ def morph():
 ran_march = random.randint(0, 100)
 angle = random.randint(1, 360)
 
-print(angle)
-
 # def right():
 #     angle = random.randint(0, 359)
 #     return sedge.right(angle)
@@ -50,17 +48,7 @@ def sedge_go():
 
 
 for _ in range(10000):
-
     sedge_turn()
     sedge_go()
-
-
-
-
-
-
-
-
-
 
 screen.exitonclick()
